@@ -2,9 +2,10 @@ source 'https://rubygems.org'
 
 gem 'rails'
 
-group :development, :test do
+group :development do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard-rspec'
 end
 
 # Gems used only for assets and not required
@@ -19,6 +20,11 @@ gem 'jquery-rails'
 
 group :test do
   gem 'capybara'
+  gem 'rspec-rails'
+  gem 'rb-fsevent'
+  gem 'growl'
+  gem 'guard-spork'
+  gem 'spork'
 end
 
 group :production do
